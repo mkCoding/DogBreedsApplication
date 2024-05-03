@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.dogbreedsapplication.api.RetrofitInstance
+import com.example.dogbreedsapplication.data.api.RetrofitInstance
 import com.example.dogbreedsapplication.databinding.ActivityMainBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
 
     //create binding variable to make access to UI elements easier to reference
     private lateinit var binding:ActivityMainBinding
-    private lateinit var viewModel:BreedViewModel
+//    private lateinit var viewModel:BreedViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val breedViewModel = ViewModelProvider(this).get(BreedViewModel::class.java)
+//        val breedViewModel = ViewModelProvider(this).get(BreedViewModel::class.java)
 
         //initialize the binding variable by inflating the view
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
         //set contentView to binding root
         setContentView(binding.root)
 
-        val textView:TextView = binding.textView
-        textView.setOnClickListener {
-
-
-        }
+//        val textView:TextView = binding.textView
+//        textView.setOnClickListener {
+//
+//
+//        }
 //        breedViewModel.text.observe(this, Observer {
 //            textView.text = it
 //        })
@@ -45,16 +45,10 @@ class MainActivity : AppCompatActivity() {
 
         runBlocking {
 
-            binding.textView.setText(getDogBreeds().toString())
+//            binding.textView.setText(getDogBreeds().toString())
         }
 
-        binding.apply {
 
-        }
-
-//            Log.d("MainActivity","${getMessages()}")
-//            Log.d("MainActivity","${getMessages2()}")
-//            getMessages2()
 
 //        }
 

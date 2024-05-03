@@ -1,9 +1,9 @@
-package com.example.dogbreedsapplication.model
+package com.example.dogbreedsapplication.data.model
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Message(
+data class MessageModel(
     @SerializedName("affenpinscher")
     val affenpinscher: List<Any?>? = listOf(),
     @SerializedName("african")

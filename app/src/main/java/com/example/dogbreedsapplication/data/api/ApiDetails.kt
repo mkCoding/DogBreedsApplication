@@ -1,4 +1,4 @@
-package com.example.dogbreedsapplication.api
+package com.example.dogbreedsapplication.data.api
 
 object ApiDetail{
     //API: https://dog.ceo/api/breeds/list/all

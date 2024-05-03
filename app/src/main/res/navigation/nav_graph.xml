@@ -1,20 +1,21 @@
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/breedListFragment">
 
-<!--    app:startDestination="@id/firstFragment">-->
+    <fragment
+        android:id="@+id/breedListFragment"
+        android:name="com.example.dogbreedsapplication.ui.breed_list.BreedListFragment"
+        android:label="breed_list_fragment"
+        tools:layout ="@layout/fragment_breed_list" />
 
-<!--    <fragment-->
-<!--        android:id="@+id/firstFragment"-->
-<!--        android:name="com.example.myapp.FirstFragment"-->
-<!--        android:label="mainActivity"-->
-<!--        tools:layout="@layout/fragment_first" />-->
-
-<!--    <fragment-->
-<!--        android:id="@+id/secondFragment"-->
-<!--        android:name="com.example.myapp.SecondFragment"-->
-<!--        android:label="Second Fragment"-->
-<!--        tools:layout="@layout/fragment_second" />-->
+    <fragment
+        android:id="@+id/breedDetailFragment"
+        android:name="com.example.dogbreedsapplication.ui.breed_details.BreedDetailsFragment"
+        android:label="Breed Details Fragmebnt"
+        tools:layout="@layout/fragment_breed_details" />
 
 <!--     Add more destinations as needed -->
 

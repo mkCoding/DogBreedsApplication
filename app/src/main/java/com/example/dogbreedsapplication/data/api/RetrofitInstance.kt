@@ -1,4 +1,4 @@
-package com.example.dogbreedsapplication.api
+package com.example.dogbreedsapplication.data.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
