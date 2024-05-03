@@ -23,7 +23,7 @@ class BreedViewModel :ViewModel(){
 
     fun getDogBreedList(){
         viewModelScope.launch {
-            val result = RetrofitInstance.apiClient.getMessages2()
+            val result = RetrofitInstance.apiClient.getDogBreed2()
 
             if(!result.isNotEmpty()){
 //                _text.postValue()

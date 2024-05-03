@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         var resultMap:Map<String,Any?> = emptyMap() //this will return map of results obtained
 
        return GlobalScope.async{
-            resultMap = RetrofitInstance.apiClient.getMessages2()
+            resultMap = RetrofitInstance.apiClient.getDogBreed2()
 
             for(entry in resultMap){
 
